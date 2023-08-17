@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="style.css">
+     
+</head>
+<body>
+     
+    <div class="container">
+        <h1 class="fw-bolder py-5 text-center" >Bookmarker</h1>
+        <hr >
+        <div class="form-project my-5 py-4">
+            <h2 class="text-center h2-icon"><i class="fa-solid fa-bookmark"></i>Bookmark your favourite sites
+                <i class="fa-solid fa-bookmark"></i></h2>
+            <div class="form-group mx-5">
+                <label for="siteName" class="pb-2 fw-semibold">
+                    <i class="fa-solid fa-book-bookmark pe-2"></i>
+                    Site Name</label>
+                <input id="siteName" type="text" class="form-control" placeholder="Bookmark Name" >
+            </div>
+            <div class="form-group mx-5">
+                <label for="siteUrl" class="pb-2 fw-semibold">
+                <i class="fa-solid fa-link pe-2"></i>Site URL</label>
+                <input id="siteUrl" type="text" class="form-control" placeholder="Website URL" >
+            </div>
+            <button id="addBtn" onclick="addMark();" class="btn my-3 fw-bold btn-outline-info d-block">Submit</button>
+            <button id="updateBtn" onclick="updateSubmit();"  class="btn my-3 fw-bold btn-outline-warning d-none">Update</button>
+
+            <input id="searchInput" oninput="searchProducts(this.value)" type="text"class="form-control w-50 m-auto" placeholder="search by bookmark name">
+        </div>
+
+        <div class="output">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Index</th>
+                        <th>WEsite Name</th>
+                        <th>Visit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody"></tbody>
+            </table>
+        </div>
+        <hr>
+
+        <footer>
+            <h6 class="text-muted">@ 2019 Bookmarker Inc.</h6>
+        </footer>
+    </div>
+
+    <script src="JS/all.min.js"></script>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
+
+</body>
+</html>

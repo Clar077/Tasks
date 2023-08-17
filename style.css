@@ -1,0 +1,13 @@
+body{
+    background-color: #F2D5D2;
+}
+h1{
+    font-family: "Pacifico", cursive;
+}
+h2 , i.h2-icon{
+        font-family: "Righteous", cursive;
+        font-size: 25px;
+        background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
